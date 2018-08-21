@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>test</title>
+	<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+<body>
+	<header>
+		<div class="top_head clearfix container">
+			<h1 class="pull-left">test</h1>
+			<nav class="pull-left">
+				<ul class="nav nav-pills">
+					<li role="presentation">
+						<a href="">top_nav1</a>
+					</li>
+					<li role="presentation" class="dropdown">
+						<a href="">top_nav2</a>
+					</li>
+					<li role="presentation" class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">top_nav3  <span class="caret"></span></a>
+				    <ul class="dropdown-menu">
+				    	<li><a href="">드롭1</a></li>
+				    	<li><a href="">드롭2</a></li>
+				    	<li><a href="">드롭3</a></li>
+				    </ul>
+					</li>
+					<li>
+						<a href="">top_nav4</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="pull-right">
+				<ul class="nav nav-pills">
+					<li class="nav-item"><a href="">icon1</a></li>
+					<li class="nav-item"><a href="">icon2</a></li>
+					<li class="nav-item"><a href="">icon3</a></li>
+					<li role="presentation" class="dropdown nav-item">
+						<a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="http://via.placeholder.com/30x30"> Violeta Parra <span class="caret"></span></a>
+				    <ul class="dropdown-menu">
+				    	<li><a href="">드롭1</a></li>
+				    	<li><a href="">드롭2</a></li>
+				    	<li><a href="">드롭3</a></li>
+				    </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="menu-wrap">
+			<nav class="menu">
+				<ul class="nav nav-tabs" role="tablist" id="myTabs">
+					<li role="presentation" class="active">
+						<a href="#home" aria-controls="home" role="tab" data-toggle="tab">HOME</a>
+					</li>
+					<li role="presentation">
+						<a href="#form" aria-controls="form" role="tab" data-toggle="tab">Forms</a>
+					</li>
+					<li role="presentation">
+						<a href="#table" aria-controls="table" role="tab" data-toggle="tab">Table</a>
+					</li>
+				</ul>
+				 <!-- Tab panes -->
+			  <div class="tab-content">
+			    <ul role="tabpanel" class="nav nav-pills tab-pane active" id="home">
+			    	<li role="presentation"><a href="#">icon01</a></li>
+			    	<li role="presentation"><a href="#">icon02</a></li>
+			    	<li role="presentation"><a href="#">icon03</a></li>
+			    </ul>
+			    <ul role="tabpanel" class="nav nav-pills tab-pane" id="form">		    	
+			    	<li role="presentation"><a href="#">icon04</a></li>
+			    	<li role="presentation"><a href="#">icon05</a></li>
+			    	<li role="presentation"><a href="#">icon06</a></li>
+			    </ul>
+			    <ul role="tabpanel" class="nav nav-pills tab-pane" id="table">
+			    	<li role="presentation"><a href="#">icon07</a></li>
+			    	<li role="presentation"><a href="#">icon08</a></li>
+			    </ul>
+			  </div>
+			</nav>
+	    <div class="input-group sch_wrap">
+	      <input type="text" class="form-control" placeholder="Search for...">
+	      <span class="input-group-btn">
+	        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+	      </span>
+	    </div>
+		</div>
+	</header>
+	<section class="container">
+		<div class="row">					
+			<div class="col-md-7">
+				<div class="widget widget-fullwidth user-develop-chart">
+					<div class="widget-head">
+						<div class="tools"><span class="icon s7-cloud-download"></span><span class="icon s7-refresh-2"></span></div><span class="title">Development Activity</span>
+					</div>
+					<div class="widget-chart-container">
+						<canvas id="myChart"></canvas>
+					</div>
+				</div>
+		  </div>
+		  <div class="col-md-5">
+		  	<div class="widget list-group">
+		  		<div class="list-group-item">
+		  			<div class="indicator-item-icon">
+		  				<div class="icon"><span class="s7-graph1"></span></div>
+		  			</div>
+		  			<div class="indicator-item-value"><span data-toggle="counter" data-end="36" class="indicator-value-counter">36</span>
+		  				<div class="indicator-value-title">Today's Orders</div>
+		  			</div>
+		  		</div>
+		  		<div class="list-group-item">
+		  			<div class="indicator-item-icon">
+		  				<div class="icon"><span class="s7-graph"></span></div>
+		  			</div>
+		  			<div class="indicator-item-value"><span data-toggle="counter" data-end="157" class="indicator-value-counter">157</span>
+		  				<div class="indicator-value-title">Support Tickets</div>
+		  			</div>
+		  		</div>
+		  		<div class="list-group-item">
+		  			<div class="indicator-item-icon">
+		  				<div class="icon"><span class="s7-graph3"></span></div>
+		  			</div>
+		  			<div class="indicator-item-value"><span data-toggle="counter" data-decimals="1" data-end="17.9" class="indicator-value-counter">17.9</span>
+		  				<div class="indicator-value-title">Download Files</div>
+		  			</div>
+		  		</div>
+		  		<div class="list-group-item">
+		  			<div class="indicator-item-icon">
+		  				<div class="icon"><span class="s7-cart"></span></div>
+		  			</div>
+		  			<div class="indicator-item-value"><span data-toggle="counter" data-decimals="2" data-end="78,450" data-prefix="$" class="indicator-value-counter">$78,450.00</span>
+		  				<div class="indicator-value-title">Total Purchases</div>
+		  			</div>
+		  		</div>
+		  	</div>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="widget">
+					<h2>Week Activity</h2>
+					<div></div>
+					<div>
+						<ol class="la">
+							<li>fkfkf</li>
+							<li>xpxpx</li>
+							<li>dfdfdf</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="widget">
+					
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="widget">
+					
+				</div>				
+			</div>
+		</div>
+	</section>
+	<footer>
+		
+	</footer>
+	<!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<script>
+	var ctx = document.getElementById('myChart').getContext('2d');
+	var chart = new Chart(ctx, {
+	    // The type of chart we want to create
+	    type: 'line',
+
+	    // The data for our dataset
+	    data: {
+	        labels: ["", "", "", "", "", "", ""],
+	        datasets: [{
+	            label: "dataset",
+	            backgroundColor: 'rgb(67, 246, 174)',
+	            borderWidth:'0',
+	            data: [0, 10, 5, 2, 20, 20, 30],
+	        },{
+	            label: "dataset2",
+	            backgroundColor: 'rgb(37, 224, 149)',
+	            borderWidth:'0',
+	            data: [10, 10, 5, 22, 10, 0, 5],
+	        },{
+	            label: "dataset3",
+	            backgroundColor: 'rgb(44, 193, 133)',
+	            borderWidth:'0',
+	            data: [0, 10, 5, 1, 2, 0, 0],
+	        }
+	        ]
+	    },
+    options: {
+		    legend: {
+		        display: true,
+		        position: 'top',
+		        labels:{
+		        	usePointStyle : true
+		        }		        
+		    },
+        scales: {
+            xAxes: [{
+                gridLines :{
+                	display: false
+                },
+                display:false
+            }],
+            yAxes: [{
+                stacked: true,
+                gridLines : {
+                	display: false
+                },
+                display:false
+            }]
+        },
+        elements: {
+				line: {
+					tension: 0.000001
+				},
+				point:{
+					pointStyle : 'dash'
+				}
+			},
+    }
+	});
+
+	$('#myTabs a').click(function (e) {
+  	e.preventDefault()
+  	$(this).tab('show')
+	})
+	</script>
+</body>
+</html>
